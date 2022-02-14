@@ -8,12 +8,16 @@ class ResearchChartPage extends Component {
 
   render() {
     let content1;
-    content1 = <ResearchChart data={_.cloneDeep(researchData)}/>;
+    content1 = <ResearchChart data={_.cloneDeep(researchData)} />;
 
     return (
-      <div>
+      <div style={{ width: "100%", margin: "5vh" }}>
+        <h1>Sponsored Research</h1>
         {content1}
+        <h4>X-axis: Year</h4>
+        <h4>Y-axis: Funding Amount</h4>
       </div>
+
     );
   }
 }

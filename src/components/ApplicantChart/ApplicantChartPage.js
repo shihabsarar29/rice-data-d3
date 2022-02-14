@@ -1,86 +1,57 @@
-import { useD3 } from '../hooks/useD3';
 import React from 'react';
-import * as d3 from 'd3';
+import ApplicantChart from "./ApplicantChart";
 
-function ApplicantChart({ data }) {
-  const ref = useD3(
-    (svg) => {
-      const height = 500;
-      const width = 500;
-      const margin = { top: 20, right: 30, bottom: 30, left: 40 };
-
-      const x = d3
-        .scaleBand()
-        .domain(data.map((d) => d.Year))
-        .rangeRound([margin.left, width - margin.right])
-        .padding(0.1);
-
-      const y1 = d3
-        .scaleLinear()
-        .domain([0, 30000])
-        .rangeRound([height - margin.bottom, margin.top]);
-
-      const xAxis = (g) =>
-        g.attr("transform", `translate(0,${height - margin.bottom})`).call(
-          d3
-            .axisBottom(x)
-            .tickValues(
-              d3
-                .ticks(...d3.extent(x.domain()), width / 40)
-                .filter((v) => x(v) !== undefined)
-            )
-            .tickSizeOuter(0)
-        );
-
-      const y1Axis = (g) =>
-        g
-          .attr("transform", `translate(${margin.left},0)`)
-          .style("color", "steelblue")
-          .call(d3.axisLeft(y1).ticks(null, "s"))
-          .call((g) => g.select(".domain").remove())
-          .call((g) =>
-            g
-              .append("text")
-              .attr("x", -margin.left)
-              .attr("y", 10)
-              .attr("fill", "currentColor")
-              .attr("text-anchor", "start")
-              .text(data.y1)
-          );
-
-      svg.select(".x-axis").call(xAxis);
-      svg.select(".y-axis").call(y1Axis);
-
-      svg
-        .select(".plot-area")
-        .attr("fill", "steelblue")
-        .selectAll(".bar")
-        .data(data)
-        .join("rect")
-        .attr("class", "bar")
-        .attr("x", (d) => x(d.Year))
-        .attr("width", x.bandwidth())
-        .attr("y", (d) => y1(d.Number))
-        .attr("height", (d) => y1(0) - y1(d.Number));
+  const data = [
+    {
+      Year: 2012,
+      Number: 15133
     },
-    [data.length]
-  );
+    {
+      Year: 2013,
+      Number: 15415
+    },
+    {
+      Year: 2014,
+      Number: 17728
+    },
+    {
+      Year: 2015,
+      Number: 17951
+    },
+    {
+      Year: 2016,
+      Number: 18236
+    },
+    {
+      Year: 2017,
+      Number: 18063
+    },
+    {
+      Year: 2018,
+      Number: 20923
+    },
+    {
+      Year: 2019,
+      Number: 27087
+    },
+    {
+      Year: 2020,
+      Number: 23455
+    },
+    {
+      Year: 2021,
+      Number: 29544
+    },
+    
+  ]
 
+export default function ApplicantChartPage() {
   return (
-    <svg
-      ref={ref}
-      style={{
-        height: 500,
-        width: "100%",
-        marginRight: "0px",
-        marginLeft: "0px",
-      }}
-    >
-      <g className="plot-area" />
-      <g className="x-axis" />
-      <g className="y-axis" />
-    </svg>
-  );
+    <div style={{width:"100%", margin:"5vh"}}>
+        <h1>Applicants</h1>
+        <ApplicantChart data={data} />
+        <h4>X-axis: Year</h4>
+        <h4>Y-axis: Number of Applicants</h4>
+    </div>
+  )
 }
-
-export default ApplicantChart;

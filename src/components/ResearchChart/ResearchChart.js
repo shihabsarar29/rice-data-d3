@@ -11,7 +11,7 @@ let chart = {},
     g;
 
 chart.create = (el, props, state) => {
-	const margin = {top: 50, right: 20, bottom: 30, left: 50};
+	const margin = {top: 30, right: 20, bottom: 30, left: 50};
 	
 	let svg = d3.select(el).append('svg')
              	.attr('class', 'chart')

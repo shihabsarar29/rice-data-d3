@@ -10,9 +10,9 @@ import GeographicChart from "./GeographicChart";
 export default function GeographicChartPage() {
   return (
     
-    <div style={{width:"100%"}}>
-      <div style={{height:"5vh"}}></div>
-        <GeographicChart data={data}/>
+    <div style={{width:"100%", margin:"5vh"}}>
+        <h1>Geographic Origin</h1>
+        <GeographicChart data={data} />
     </div>
   )
 }

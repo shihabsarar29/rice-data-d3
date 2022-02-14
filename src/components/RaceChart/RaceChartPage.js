@@ -12,9 +12,9 @@ import RaceChart from "./RaceChart";
 export default function RaceChartPage() {
   return (
     
-    <div style={{width:"100%"}}>
-      <div style={{height:"5vh"}}></div>
-        <RaceChart data={data}/>
+    <div style={{width:"100%", margin:"5vh"}}>
+        <h1>Race/Ethnicity</h1>
+        <RaceChart data={data} />
     </div>
   )
 }

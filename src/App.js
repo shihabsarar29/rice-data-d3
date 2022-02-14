@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar';
 import MatriculantChartPage from './components/MatriculantChart/MatriculantChartPage';
 import RaceChartPage from './components/RaceChart/RaceChartPage';
 import GeographicChartPage from './components/GeographicChart/GeographicChartPage';
-import ApplicantChartPage from './components/ApplicantChart/ApplicantChart';
+import ApplicantChartPage from './components/ApplicantChart/ApplicantChartPage';
 import ResearchChartPage from './components/ResearchChart/ResearchChartPage';
 import BudgetChartPage from './components/BudgetChart/BudgetChartPage';
 
