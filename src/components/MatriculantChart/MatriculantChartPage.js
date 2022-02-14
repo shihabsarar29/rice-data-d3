@@ -49,8 +49,9 @@ export default function MatriculantChartPage() {
     <div style={{ width: "100%", margin: "5vh" }}>
       <h1>Matriculants</h1>
       <MatriculantChart data={data} />
-      <h4>X-axis: Year</h4>
-      <h4>Y-axis: Number of Matriculants</h4>
+      <h4>X-axis: Year<br></br>
+      Y-axis: Number of Matriculants</h4>
+      <p>A Bar Chart showing the Matriculants number for first-time degree-seeking undergraduates</p>
     </div>
   )
 }

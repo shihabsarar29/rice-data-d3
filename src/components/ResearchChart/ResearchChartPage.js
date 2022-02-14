@@ -14,8 +14,9 @@ class ResearchChartPage extends Component {
       <div style={{ width: "100%", margin: "5vh" }}>
         <h1>Sponsored Research</h1>
         {content1}
-        <h4>X-axis: Year</h4>
-        <h4>Y-axis: Funding Amount</h4>
+        <h4>X-axis: Year<br></br>
+        Y-axis: Funding Amount</h4>
+        <p>A Line Chart displaying the end-of-fiscal year sponsored research revenues</p>
       </div>
 
     );

@@ -13,6 +13,7 @@ export default function GeographicChartPage() {
     <div style={{width:"100%", margin:"5vh"}}>
         <h1>Geographic Origin</h1>
         <GeographicChart data={data} />
+        <p>A Pie Chart showing the enrollment of students by Geographic Origin</p>
     </div>
   )
 }

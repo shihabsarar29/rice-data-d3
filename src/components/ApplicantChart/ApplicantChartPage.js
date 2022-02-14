@@ -50,8 +50,9 @@ export default function ApplicantChartPage() {
     <div style={{width:"100%", margin:"5vh"}}>
         <h1>Applicants</h1>
         <ApplicantChart data={data} />
-        <h4>X-axis: Year</h4>
-        <h4>Y-axis: Number of Applicants</h4>
+        <h4>X-axis: Year<br></br>
+        Y-axis: Number of Applicants</h4>
+        <p>A Bar Chart showing the Applicants number for first-time degree-seeking undergraduates</p>
     </div>
   )
 }

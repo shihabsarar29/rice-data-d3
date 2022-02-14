@@ -14,8 +14,9 @@ class BudgetChartPage extends Component {
       <div style={{ width: "100%", margin: "5vh" }}>
         <h1>Consolidated Budget</h1>
         {content1}
-        <h4>X-axis: Year</h4>
-        <h4>Y-axis: Budget Amount</h4>
+        <h4>X-axis: Year<br></br>
+        Y-axis: Budget Amount</h4>
+        <p>A Line Chart displaying the total budget for the last 10 years.</p>
       </div>
     );
   }
