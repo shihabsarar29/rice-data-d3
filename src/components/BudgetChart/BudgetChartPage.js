@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { budgetStock as budgetData } from './BudgetData';
-import BudgetChart from './BudgetChart.js';
+import BudgetChart from './BudgetChart.jsx';
 import * as _ from 'lodash';
 
 class BudgetChartPage extends Component {
@@ -11,8 +11,11 @@ class BudgetChartPage extends Component {
     content1 = <BudgetChart data={_.cloneDeep(budgetData)}/>;
 
     return (
-      <div>
+      <div style={{ width: "100%", margin: "5vh" }}>
+        <h1>Consolidated Budget</h1>
         {content1}
+        <h4>X-axis: Year</h4>
+        <h4>Y-axis: Budget Amount</h4>
       </div>
     );
   }
