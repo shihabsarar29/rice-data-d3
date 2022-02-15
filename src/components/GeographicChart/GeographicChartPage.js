@@ -13,7 +13,9 @@ export default function GeographicChartPage() {
     <div style={{width:"100%", margin:"5vh"}}>
         <h1>Geographic Origin</h1>
         <GeographicChart data={data} />
-        <p>A Pie Chart showing the enrollment of students by Geographic Origin</p>
+        <p>A Pie Chart showing the enrollment of students by Geographic Origin
+          <a href="https://oie.rice.edu/IR-reporting/student-enrollment" target="_blank">(Data Source)</a>
+        </p>
     </div>
   )
 }

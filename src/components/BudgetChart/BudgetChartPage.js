@@ -16,7 +16,9 @@ class BudgetChartPage extends Component {
         {content1}
         <h4>X-axis: Year<br></br>
         Y-axis: Budget Amount</h4>
-        <p>A Line Chart displaying the total budget for the last 10 years.</p>
+        <p>A Line Chart displaying the total budget for the last 10 years.
+          <a href="https://oie.rice.edu/IR-reporting/consolidated-budget" target="_blank">(Data Source)</a>
+        </p>
       </div>
     );
   }

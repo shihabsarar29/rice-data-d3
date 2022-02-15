@@ -52,7 +52,9 @@ export default function ApplicantChartPage() {
         <ApplicantChart data={data} />
         <h4>X-axis: Year<br></br>
         Y-axis: Number of Applicants</h4>
-        <p>A Bar Chart showing the Applicants number for first-time degree-seeking undergraduates</p>
+        <p>A Bar Chart showing the Applicants number for first-time degree-seeking undergraduates 
+          <a href="https://oie.rice.edu/IR-reporting/undergraduate-admissions-statistics" target="_blank">(Data Source)</a>
+        </p>
     </div>
   )
 }

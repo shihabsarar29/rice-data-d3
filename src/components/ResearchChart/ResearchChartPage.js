@@ -16,7 +16,9 @@ class ResearchChartPage extends Component {
         {content1}
         <h4>X-axis: Year<br></br>
         Y-axis: Funding Amount</h4>
-        <p>A Line Chart displaying the end-of-fiscal year sponsored research revenues</p>
+        <p>A Line Chart displaying the end-of-fiscal year sponsored research revenues
+          <a href="https://oie.rice.edu/IR-reporting/sponsored-research" target="_blank">(Data Source)</a>
+        </p>
       </div>
 
     );
