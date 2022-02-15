@@ -5,12 +5,12 @@ import "react-pro-sidebar/dist/css/styles.css";
 
 export default function Sidebar() {
   return (
-      
-    <ProSidebar style={{height:"100vh"}}>
-      <div style={{height:"5vh"}}></div>
+
+    <ProSidebar style={{ height: "100vh" }}>
+      <div style={{ height: "5vh" }}></div>
       <Menu iconShape="square">
         <MenuItem><a href="/">Home</a></MenuItem>
-        <div style={{height:"2vh"}}></div>
+        <div style={{ height: "2vh" }}></div>
         <SubMenu title={"Undergraduate Statistics"}>
           <MenuItem><a href="/applicantChart">Applicants</a></MenuItem>
           <MenuItem><a href="/matriculantChart">Matriculants</a></MenuItem>

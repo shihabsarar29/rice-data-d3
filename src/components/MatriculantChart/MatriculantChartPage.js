@@ -50,7 +50,7 @@ export default function MatriculantChartPage() {
       <h1>Matriculants</h1>
       <MatriculantChart data={data} />
       <h4>X-axis: Year<br></br>
-      Y-axis: Number of Matriculants</h4>
+        Y-axis: Number of Matriculants</h4>
       <p>A Bar Chart showing the Matriculants number for first-time degree-seeking undergraduates
         <a href="https://oie.rice.edu/IR-reporting/undergraduate-admissions-statistics" target="_blank">(Data Source)</a>
       </p>

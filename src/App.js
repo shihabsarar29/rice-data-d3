@@ -13,17 +13,17 @@ import BudgetChartPage from './components/BudgetChart/BudgetChartPage';
 
 function App() {
   return (
-    <div style={{display:"flex", flexDirection:"row"}}>
+    <div style={{ display: "flex", flexDirection: "row" }}>
       <Sidebar />
-      <div style={{width:"30px"}}></div>
+      <div style={{ width: "30px" }}></div>
       <Router>
-        <Route exact path="/"><Home/></Route>
-        <Route exact path="/applicantChart"><ApplicantChartPage/></Route>
-        <Route exact path="/matriculantChart"><MatriculantChartPage/></Route>
-        <Route exact path="/raceChart"><RaceChartPage/></Route>
-        <Route exact path="/geographicChart"><GeographicChartPage/></Route>
-        <Route exact path="/researchChart"><ResearchChartPage/></Route>
-        <Route exact path="/budgetChart"><BudgetChartPage/></Route>
+        <Route exact path="/"><Home /></Route>
+        <Route exact path="/applicantChart"><ApplicantChartPage /></Route>
+        <Route exact path="/matriculantChart"><MatriculantChartPage /></Route>
+        <Route exact path="/raceChart"><RaceChartPage /></Route>
+        <Route exact path="/geographicChart"><GeographicChartPage /></Route>
+        <Route exact path="/researchChart"><ResearchChartPage /></Route>
+        <Route exact path="/budgetChart"><BudgetChartPage /></Route>
       </Router>
 
     </div>

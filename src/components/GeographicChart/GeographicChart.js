@@ -10,12 +10,12 @@ function GeographicChart(props) {
     top: 30, right: 0, bottom: 0, left: 0,
   };
 
-  const width = 2 * 200+ margin.left + margin.right;
+  const width = 2 * 200 + margin.left + margin.right;
   const height = 2 * 200 + margin.top + margin.bottom;
 
-  const colorScale = d3     
-    .scaleSequential()      
-    .interpolator(d3.interpolateCool)      
+  const colorScale = d3
+    .scaleSequential()
+    .interpolator(d3.interpolateCool)
     .domain([0, data.length]);
 
   useEffect(() => {
@@ -71,7 +71,7 @@ function GeographicChart(props) {
         const [x, y] = arcGenerator.centroid(d);
         return `translate(${x}, ${y})`;
       });
-  }    
+  }
 
   return <div id="pie-container" />;
 }

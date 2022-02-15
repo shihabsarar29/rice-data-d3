@@ -9,11 +9,11 @@ class ResearchChart extends Component {
 
   componentDidMount() {
     let el = ReactDOM.findDOMNode(this);
-	
-		chart.create(el, {
-			width: 960,
-			height: 500
-		}, this.getChartState());
+
+    chart.create(el, {
+      width: 960,
+      height: 500
+    }, this.getChartState());
   }
 
   componentDidUpdate() {
